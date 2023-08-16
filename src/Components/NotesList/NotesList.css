@@ -1,11 +1,24 @@
 .notes-list {
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.note-container h2 {
+  display: flex;
+  font-size: 2em;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
 
 .note.new {
-  background-color: #60faff;
+  background-color: #28282847;
+  color: aliceblue;
+}
+.note.new:hover {
+  background-color: #5d5d5d2a;
+  box-shadow: #000000;
 }
 textarea {
   border: none;
@@ -16,12 +29,15 @@ textarea:focus {
   outline: none;
 }
 .save {
-  background-color: azure;
+  background-color: rgba(0, 0, 0, 0.323);
   border: none;
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  transition: 0.3s;
+  /* padding: 20px 20px 20px 20px; */
 }
 .save:hover {
-  background-color: bisque;
+  background-color: #6e5ed8;
   cursor: pointer;
 }

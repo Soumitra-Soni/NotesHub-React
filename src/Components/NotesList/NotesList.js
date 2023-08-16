@@ -6,7 +6,7 @@ import "./NotesList.css";
 const NotesList = ({ notes, handleAddNote, handleDeleteNote }) => {
   return (
     <div className="note-container">
-      <h2>Notes</h2>
+      <h2>My Notes</h2>
       <div className="notes-list">
         {notes.map((note) => (
           <Note

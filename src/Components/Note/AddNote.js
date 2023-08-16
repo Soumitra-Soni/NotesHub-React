@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Note.css";
+import { AiFillSave } from "react-icons/ai";
 const AddNote = ({ handleAddNote }) => {
   const [noteText, setNoteText] = useState("");
   const characterLimit = 200;
@@ -26,7 +27,7 @@ const AddNote = ({ handleAddNote }) => {
       <div className="note-footer">
         <small>{characterLimit - noteText.length} Remaining</small>
         <button className="save" onClick={handleSaveClick}>
-          Save
+          <AiFillSave className="search-icons" size="2em" color="white" />
         </button>
       </div>
     </div>
